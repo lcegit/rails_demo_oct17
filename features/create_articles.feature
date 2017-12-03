@@ -17,6 +17,16 @@ Feature: Create articles
     And I should see "Learning Rails 5"
     And I should see "Excited about learning a new framework"
 
+  Scenario: Successfully create another article
+    Then show me the page
+    When I fill in "Title" with "Keeping up with Rails 5"
+    And I fill in "Content" with "Excited but this train runs real fast"
+    And I click "Create Article" button
+    Then I should be on "Keeping up with Rails 5" page
+    And I should see "Article was successfully created"
+    And I should see "Keeping up with Rails 5"
+    And I should see "Excited but this train runs real fast"
+
   Scenario: Blogger doesn't enter a title for the article
     When I fill in "Content" with "Excited about learning a new framework"
     And I click "Create Article" button
