@@ -2,7 +2,7 @@ Feature: Comment on Articles
   As a blogger
   In order to engage with a blog post
   I would like to be avle to comment on Articles
-  
+
   Background:
     Given the following articles exists
       | title                    | content                                                |
@@ -19,4 +19,4 @@ Feature: Comment on Articles
     And I click "Create Comment" button
     Then I should be on "Article" page
     And I should see "Comments"
-    And I shoud see "Nice article"
+    And I should see "Nice article"
