@@ -14,3 +14,7 @@ Then("I should be on {string} page") do |article_title|
   article = Article.find_by(title: article_title)
   expect(page.current_path).to eq "/articles/#{article.id}"
 end
+
+Then("show me the page") do
+  save_and_open_page
+end
