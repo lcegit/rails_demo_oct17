@@ -30,9 +30,11 @@ Feature: Create articles
   Scenario: Blogger doesn't enter a title for the article
     When I fill in "Content" with "Excited about learning a new framework"
     And I click "Create Article" button
+    Then show me the page
     Then I should see "Title can't be blank"
 
     Scenario: Blogger doesn't enter content for the article
       When I fill in "Title" with "This is a title"
       And I click "Create Article" button
+      Then show me the page
       Then I should see "Content can't be blank"

@@ -15,6 +15,10 @@ Then("I should be on {string} page") do |article_title|
   expect(page.current_path).to eq "/articles/#{article.id}"
 end
 
+Then("I should not see {string}") do |content|
+  expect(page).not_to have_content content
+end
+
 Then("show me the page") do
   save_and_open_page
 end
