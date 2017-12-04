@@ -11,7 +11,6 @@ Feature: Comment on Articles
 
   Scenario: Successfully comment on an article
     Given I visit the landing page
-    Then show me the page
     And I click on "Show" by the "Learning Rails" title
     Then show me the page
     When I fill in "Email" with "jenny@random.com"
