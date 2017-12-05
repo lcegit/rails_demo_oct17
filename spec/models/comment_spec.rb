@@ -17,5 +17,9 @@ RSpec.describe Comment, type: :model do
 
   describe 'Associations' do
     it { is_expected.to belong_to :article }
+
+    describe 'Validations' do
+      it { is_expected.to validate_presence_of :body }
+    end
   end
 end
