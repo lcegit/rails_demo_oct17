@@ -18,3 +18,4 @@ Feature: Comment on Articles
     Then I should be on "Learning Rails" page
     And I should see "Your comment was added successfully"
     And I should see "Just like Start Trek Discovery"
+    And I should see "Commented by: random@random.com"

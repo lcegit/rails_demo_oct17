@@ -8,3 +8,10 @@
   <%=form.text_field :comment %>
   <%= form.submit 'Create comment' %>
 <% end %>
+
+<% if @article.comments.any? %>
+  <% @article.comments.each do |comment| %>
+  <p><%= comment.body %></p>
+  <p><%= "Comment by: #{comment.email}"%></p>
+  <% end %>
+<% end %>
