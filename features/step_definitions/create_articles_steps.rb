@@ -3,11 +3,11 @@ When("I click {string} link") do |link|
 end
 
 When("I fill in {string} with {string}") do |field, content|
-  fill_in field, with: content
+  fill_in field.downcase, with: content
 end
 
-When("I click {string} button") do |button|
-  click_button button
+When("I click {string} button") do |element|
+  click_link_or_button element
 end
 
 Then("I should be on {string} page") do |article_title|
