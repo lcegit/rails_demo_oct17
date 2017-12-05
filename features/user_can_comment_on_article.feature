@@ -12,7 +12,6 @@ Feature: Comment on Articles
   Scenario: Successfully comment on an article
     Given I visit the landing page
     And I click "Learning Rails" link
-    Then show me the page
     When I fill in "Email" with "random@random.com"
     And I fill in "Comment" with "Just like Start Trek Discovery"
     And I click "Create comment" button
