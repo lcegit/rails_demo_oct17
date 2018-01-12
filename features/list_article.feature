@@ -11,8 +11,8 @@ Feature: List articles on landing page
 
     Scenario: Viewing list of articles on application's landing page
       When I visit the landing page
-      Then I should see "Learning Rails"
-      And I should see "Rails is a pretty awesome web framework"
+      Then I should see "A breaking news item"
+      And I should see "Some really breaking action"
       And I should see "Written by Thomas at 2018-01-12"
       And I should see "Learn Rails 5"
       And I should see "Build awesome rails applications"
