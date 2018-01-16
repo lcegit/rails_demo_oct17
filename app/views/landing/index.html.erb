@@ -5,7 +5,7 @@
     <li>
       <em><%= article.title %></em> <br>
       <%= article.content %>
-      <p>Written by <%= article.author %> at 2018-01-12</p>
+      <p>Written by <%= article.author %> at <%= article.created_at %></p>
     </li>
   <% end %>
 </ul>
